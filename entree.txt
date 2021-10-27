@@ -1,0 +1,9 @@
+axiome = 'a-a-a-a' 
+regle = 'a=a+a*a+a+aa*aa+a+a*a+a' 
+angle = 90 
+taille = 5
+niveau = 4 
+vitesse = 0
+couleur = 20, 20, 20
+position = -100, 0
+epaisseur = 2

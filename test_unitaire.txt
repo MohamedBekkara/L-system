@@ -1,0 +1,173 @@
+Ce fichier contient tout nos test unitaire que nous avons préparé
+pour pouvoir les lancés, créer un fichier de le repertoire vous 
+pouvez l'appeler comme vous voulez et dans ce fichier vous 
+copiez un des test unitaire fourni et puis vous lancez le programme
+si vous ne savez pas comment lancé un programme allez dans le fichier 
+README.txt qui vous expliquera
+
+
+
+************* FICHIER QUI FONCTIONNE SANS PROBLEME ***************
+
+
+
+- figure 2 sujet
+axiome = "--a"
+regle = "a=aa+[+a[+a]-a+a]-[-a-[a]+a]"
+angle = 30
+
+- figure 3 sujet
+axiome = "---a"
+regle = "a=aa+[+a-a-a]-[-a+a+a]"
+angle = 22.50
+
+- figure 4 sujet
+axiome = "a-a-a-a"
+regle = "a=a+a*a+a+aa*aa+a+a*a+a"
+angle = 90
+
+- regle 1
+axiome = 'a-b-' 
+regle = "a=a++a" "b=b-+"
+angle = 90 
+niveau = 0
+
+- regle 2
+axiome = 'a-b-' 
+regle = "a=a++a" 
+regle = "b=b-+"
+angle = 90 
+niveau = 0
+
+- lsystem utilisant toute les valeurs possible
+axiome = 'a-a-a-a' 
+regle = 'a=a+a*a+a+aa*aa+a+a*a+a'
+angle = 90 
+taille = 10 
+niveau = 4 
+vitesse = 0
+couleur = 200, 20, 20
+position = 0, 0
+epaisseur = 2
+
+- le même dans le desordre
+vitesse = 0
+niveau = 4 
+epaisseur = 2
+regle = 'a=a+a*a+a+aa*aa+a+a*a+a'
+taille = 10 
+angle = 90 
+couleur = 200, 20, 20
+axiome = 'a-a-a-a' 
+position = 0, 0
+
+- fichier minimum
+axiome = 'a---' 
+angle = 90 
+niveau = 0
+
+- utilisation de nombres flottant
+axiome = 'a---' 
+angle = 90.8
+niveau = 1.0
+
+- valeur negatif pour la position
+position = -200, -200
+axiome = 'a---' 
+angle = 90 
+niveau = 0
+
+-escpacement des valeurs
+axiome        =               'a---'regle = "b=-b-"
+angle=90 
+              niveau = 0
+taille  =           10
+
+
+************* FICHIER QUI NE FONCTIONNE PAS ***************
+
+- pas d'axiome 
+angle = 90 
+niveau = 0
+
+- pas d'angle
+axiome = 'a---' 
+niveau = 0
+
+- pas de niveau
+axiome = 'a---' 
+angle = 90 
+
+- probleme de guillemet 1
+axiome = "a---' 
+angle = 90 
+niveau = 0
+
+- probleme de guillemet 2
+axiome = "a--- 
+angle = 90 
+niveau = 0
+
+- probleme de guillemet 3
+axiome = a---"
+angle = 90 
+niveau = 0
+
+- repetition d'une valeur
+axiome = "a---"
+angle = 90 
+niveau = 0
+angle = 90 
+
+- trop de regle
+axiome = 'a-b-' 
+regle = "a=a++a" "b=b-+" "a=a++"
+angle = 90 
+niveau = 0
+
+- probleme de crochet 1
+axiome = 'a-b-' 
+regle = "a=a[++a"
+angle = 90 
+niveau = 0
+
+- probleme de crochet 2
+axiome = 'a-b-' 
+regle = "a=a++a]"
+angle = 90 
+niveau = 0
+
+- mauvaise définition
+axxiome = "a-b"
+angle = 90
+niveau = 0
+
+- mauvaise synthaxe regle
+regle = "a+++"
+axiome = "a-b"
+angle = 90
+niveau = 0
+
+- caractere interdit
+axiome = "ac-b"
+angle = 90
+niveau = 0
+
+- oublie de valeur
+axiome = "ac-b"
+angle = 90
+niveau =
+
+- pas assez de nombres pour la couleur
+axiome = 'a---' 
+angle = 90 
+niveau = 0
+couleur = 200, 20
+
+- pas de signe egale pour la definition
+axiome 'a---' 
+angle = 90 
+niveau = 0
+
+
+
